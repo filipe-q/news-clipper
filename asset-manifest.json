@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/news-clipper/static/css/main.a1a91cfe.chunk.css",
+    "main.js": "/news-clipper/static/js/main.8843f312.chunk.js",
+    "main.js.map": "/news-clipper/static/js/main.8843f312.chunk.js.map",
+    "runtime-main.js": "/news-clipper/static/js/runtime-main.9059f891.js",
+    "runtime-main.js.map": "/news-clipper/static/js/runtime-main.9059f891.js.map",
+    "static/css/2.3faf9ce9.chunk.css": "/news-clipper/static/css/2.3faf9ce9.chunk.css",
+    "static/js/2.2d4d7902.chunk.js": "/news-clipper/static/js/2.2d4d7902.chunk.js",
+    "static/js/2.2d4d7902.chunk.js.map": "/news-clipper/static/js/2.2d4d7902.chunk.js.map",
+    "index.html": "/news-clipper/index.html",
+    "precache-manifest.458aea307987aa814b93a683890ba613.js": "/news-clipper/precache-manifest.458aea307987aa814b93a683890ba613.js",
+    "service-worker.js": "/news-clipper/service-worker.js",
+    "static/css/2.3faf9ce9.chunk.css.map": "/news-clipper/static/css/2.3faf9ce9.chunk.css.map",
+    "static/css/main.a1a91cfe.chunk.css.map": "/news-clipper/static/css/main.a1a91cfe.chunk.css.map",
+    "static/js/2.2d4d7902.chunk.js.LICENSE.txt": "/news-clipper/static/js/2.2d4d7902.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9059f891.js",
+    "static/css/2.3faf9ce9.chunk.css",
+    "static/js/2.2d4d7902.chunk.js",
+    "static/css/main.a1a91cfe.chunk.css",
+    "static/js/main.8843f312.chunk.js"
+  ]
+}
