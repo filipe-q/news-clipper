@@ -1,6 +1,15 @@
 .App {
   padding: 50px;
 }
+@media (max-width: 500px) {
+  .App {
+    padding: 20px;
+  }
+}
+
+.card {
+  height: 100%;
+}
 
 .card-img-top {
   height: 180px;

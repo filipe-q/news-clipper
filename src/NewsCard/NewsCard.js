@@ -2,11 +2,12 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import EditionDateTag from '../EditionDateTag/EditionDateTag';
 
 
 const NewsCard = ( props ) => {
     return (
-        <Col sm={4} style={{marginTop:'30px'}}>
+        <Col sm={12} md={6} lg={4} style={{marginTop:'30px'}}>
             <Card>
                 <Card.Img variant="top" src={props.imageURL} />
                 <Card.Body>
@@ -15,7 +16,7 @@ const NewsCard = ( props ) => {
                     <Button variant="primary" size="sm" href={props.sourceURL} target="_blank" >{props.source} <span role="img" aria-label="World Emoji">🌏</span></Button>
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">Last updated {props.editionDate} by {props.author}</small>
+                    <small className="text-muted">Last updated <EditionDateTag editionDate={props.editionDate} /> by {props.author}</small>
                 </Card.Footer>
             </Card>
         </Col>

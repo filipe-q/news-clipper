@@ -1,6 +1,7 @@
 import React, { setState } from 'react';
-import CardDeck from 'react-bootstrap/CardDeck';
 import Row from 'react-bootstrap/Row';
+import Alert from 'react-bootstrap/Alert';
+import Spinner from 'react-bootstrap/Spinner';
 import NewsCard from '../NewsCard/NewsCard';
 
 class NewsCardDeck extends React.Component {
@@ -19,7 +20,7 @@ class NewsCardDeck extends React.Component {
     }
 
     NewsList() {
-        fetch("http://localhost/newsroom-cms/wp-json/wp/v2/news_clip?_embed")
+        fetch("https://newsroom-cms.000webhostapp.com/wp-json/wp/v2/news_clip?_embed&per_page=100")
         .then(res => res.json())
         .then(
             (result) => {
@@ -40,9 +41,9 @@ class NewsCardDeck extends React.Component {
     render() {
         const { error, isLoaded, news } = this.state;
         if (error) {
-            return <div>Error: {error.message}</div>;
+            return <Alert variant={'danger'}>Error: {error.message}</Alert>;
         } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return <Spinner animation="border" role="status"><span className="sr-only">Loading...</span></Spinner>;
         } else {
             return (
                 <Row>
