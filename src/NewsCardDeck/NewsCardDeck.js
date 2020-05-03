@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { setState } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Row from 'react-bootstrap/Row';
 import NewsCard from '../NewsCard/NewsCard';
 
 class NewsCardDeck extends React.Component {
@@ -27,9 +28,7 @@ class NewsCardDeck extends React.Component {
                     news: result
                 });
             },
-            // Note: it's important to handle errors here
-            // instead of a catch() block so that we don't swallow
-            // exceptions from actual bugs in components.
+
             (error) => {
                 this.setState({
                     isLoaded: true,
@@ -46,7 +45,7 @@ class NewsCardDeck extends React.Component {
             return <div>Loading...</div>;
         } else {
             return (
-                <CardDeck>
+                <Row>
                     {news.map(news => (
                         <NewsCard key={news.id}
                             title={news.title.rendered}
@@ -58,8 +57,7 @@ class NewsCardDeck extends React.Component {
                             author={news._embedded.author[0].name}
                         />
                     ))}
-                    
-                </CardDeck>
+                </Row>
             )
         }
     }
